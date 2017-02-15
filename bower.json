@@ -1,0 +1,22 @@
+{
+  "name": "fabricciomb.github.io",
+  "description": "",
+  "main": "script.js",
+  "authors": [
+    "fabricciomb <fabricciobuenomartinelli@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Fabricciomb/fabricciomb.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.7.0",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2"
+  }
+}
