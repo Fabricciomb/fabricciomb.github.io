@@ -1,0 +1,19 @@
+$marcol: 10px
+$qntcol: 24
+=clear
+	padding: 0
+=flex
+	display: flex
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+=grid
+	+flex
+	flex-wrap: wrap
+	padding: 0 3%
+	box-sizing: border-box
+=col($cols)
+	width: calc(#{#{(100% * $cols)} / $qntcol - #{$marcol * 2}})
+	margin: $marcol
+	box-sizing: border-box

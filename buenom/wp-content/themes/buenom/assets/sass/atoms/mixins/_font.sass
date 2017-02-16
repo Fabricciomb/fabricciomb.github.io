@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700')
+$font: 'PT Sans'; 
+$light: 300
+$regular: 400
+$bold: 700
+$extra-bold: 800
+=font
+	font-family: $font
+@function calculateRem($size) 
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+=font-size($size) 
+  font-size: $size
+  font-size: calculateRem($size)

@@ -1,0 +1,772 @@
+[
+    {
+        "name": "composer/installers",
+        "version": "v1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "d78064c68299743e0161004f2de3a0204e33b804"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+            "reference": "d78064c68299743e0161004f2de3a0204e33b804",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2016-08-13T20:53:52+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "Composer\\Installers\\Plugin",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Composer\\Installers\\": "src/Composer/Installers"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "https://composer.github.io/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Hurad",
+            "ImageCMS",
+            "MODX Evo",
+            "Mautic",
+            "OXID",
+            "Plentymarkets",
+            "RadPHP",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "aimeos",
+            "annotatecms",
+            "attogram",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "cockpit",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "elgg",
+            "expressionengine",
+            "fuelphp",
+            "grav",
+            "installer",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lithium",
+            "magento",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "moodle",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "reindex",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "yawik",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "johnpbloch/wordpress-core-installer",
+        "version": "0.2.1",
+        "version_normalized": "0.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+            "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
+            "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
+            "shasum": ""
+        },
+        "require": {
+            "composer-plugin-api": "^1.0"
+        },
+        "conflict": {
+            "composer/installers": "<1.0.6"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev"
+        },
+        "time": "2015-06-11T15:15:30+00:00",
+        "type": "composer-plugin",
+        "extra": {
+            "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "johnpbloch\\Composer\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "John P. Bloch",
+                "email": "me@johnpbloch.com"
+            }
+        ],
+        "description": "A custom installer to handle deploying WordPress with composer",
+        "keywords": [
+            "wordpress"
+        ]
+    },
+    {
+        "name": "wpackagist-plugin/phoneme-order-woocommerce",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/phoneme-order-woocommerce/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/phoneme-order-woocommerce.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/phoneme-order-woocommerce/"
+    },
+    {
+        "name": "webfatorial/wordpress",
+        "version": "4.2.2",
+        "version_normalized": "4.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/webfatorial/wordpress.git",
+            "reference": "ba053450dfacba6483b73bb8ca64819b9fba8a8e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/webfatorial/wordpress/zipball/ba053450dfacba6483b73bb8ca64819b9fba8a8e",
+            "reference": "ba053450dfacba6483b73bb8ca64819b9fba8a8e",
+            "shasum": ""
+        },
+        "require": {
+            "johnpbloch/wordpress-core-installer": "~0.2",
+            "php": ">=5.3.2"
+        },
+        "time": "2015-05-07T14:00:02+00:00",
+        "type": "wordpress-core",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "WordPress Community",
+                "homepage": "http://wordpress.org/about/"
+            }
+        ],
+        "description": "WordPress é um aplicativo web para você criar um lindo website ou blog.",
+        "homepage": "http://wordpress.org/",
+        "keywords": [
+            "blog",
+            "cms"
+        ]
+    },
+    {
+        "name": "wpackagist-plugin/maintenance",
+        "version": "3.3",
+        "version_normalized": "3.3.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/maintenance/",
+            "reference": "tags/3.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/maintenance.3.3.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/maintenance/"
+    },
+    {
+        "name": "wpackagist-plugin/admin-menu-editor",
+        "version": "1.7.3",
+        "version_normalized": "1.7.3.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/admin-menu-editor/",
+            "reference": "tags/1.7.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/admin-menu-editor.1.7.3.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/admin-menu-editor/"
+    },
+    {
+        "name": "wpackagist-plugin/erp",
+        "version": "1.1.11",
+        "version_normalized": "1.1.11.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/erp/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/erp.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/erp/"
+    },
+    {
+        "name": "wpackagist-plugin/events-manager",
+        "version": "5.6.6.1",
+        "version_normalized": "5.6.6.1",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/events-manager/",
+            "reference": "tags/5.6.6.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/events-manager.5.6.6.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/events-manager/"
+    },
+    {
+        "name": "wpackagist-plugin/contact-form-7",
+        "version": "4.6.1",
+        "version_normalized": "4.6.1.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+            "reference": "tags/4.6.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.6.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/contact-form-7/"
+    },
+    {
+        "name": "wpackagist-plugin/chats",
+        "version": "1.3.0",
+        "version_normalized": "1.3.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/chats/",
+            "reference": "tags/1.3.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/chats.1.3.0.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/chats/"
+    },
+    {
+        "name": "wpackagist-plugin/wordpress-seo",
+        "version": "4.1",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+            "reference": "tags/4.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce-delivery-notes",
+        "version": "4.1.5",
+        "version_normalized": "4.1.5.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/woocommerce-delivery-notes/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/woocommerce-delivery-notes.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/woocommerce-delivery-notes/"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce",
+        "version": "2.6.13",
+        "version_normalized": "2.6.13.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/woocommerce/",
+            "reference": "tags/2.6.13"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/woocommerce.2.6.13.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/woocommerce/"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce-correios",
+        "version": "3.1.7",
+        "version_normalized": "3.1.7.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/woocommerce-correios/",
+            "reference": "tags/3.1.7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/woocommerce-correios.3.1.7.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/woocommerce-correios/"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce-pagseguro",
+        "version": "2.11.5",
+        "version_normalized": "2.11.5.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/woocommerce-pagseguro/",
+            "reference": "tags/2.11.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/woocommerce-pagseguro.2.11.5.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/woocommerce-pagseguro/"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce-mercadopago",
+        "version": "2.0.8",
+        "version_normalized": "2.0.8.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/woocommerce-mercadopago/",
+            "reference": "tags/2.0.8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/woocommerce-mercadopago.2.0.8.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/woocommerce-mercadopago/"
+    },
+    {
+        "name": "wpackagist-plugin/woocommerce-role-based-price",
+        "version": "2.8.8",
+        "version_normalized": "2.8.8.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/woocommerce-role-based-price/",
+            "reference": "tags/2.8.8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/woocommerce-role-based-price.2.8.8.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/woocommerce-role-based-price/"
+    },
+    {
+        "name": "wpackagist-plugin/wc-abandoned-cart-failed-payment-recovery",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/wc-abandoned-cart-failed-payment-recovery/",
+            "reference": "tags/1.2.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/wc-abandoned-cart-failed-payment-recovery.1.2.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wc-abandoned-cart-failed-payment-recovery/"
+    },
+    {
+        "name": "wpackagist-plugin/wc-fields-factory",
+        "version": "1.3.5",
+        "version_normalized": "1.3.5.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/wc-fields-factory/",
+            "reference": "tags/1.3.5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/wc-fields-factory.1.3.5.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wc-fields-factory/"
+    },
+    {
+        "name": "wpackagist-plugin/cloudflare-flexible-ssl",
+        "version": "1.2.2",
+        "version_normalized": "1.2.2.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/cloudflare-flexible-ssl/",
+            "reference": "tags/1.2.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/cloudflare-flexible-ssl.1.2.2.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/cloudflare-flexible-ssl/"
+    },
+    {
+        "name": "wpackagist-plugin/google-xml-sitemaps-v3-for-qtranslate",
+        "version": "3.4.1",
+        "version_normalized": "3.4.1.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/google-xml-sitemaps-v3-for-qtranslate/",
+            "reference": "tags/3.4.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/google-xml-sitemaps-v3-for-qtranslate.3.4.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/google-xml-sitemaps-v3-for-qtranslate/"
+    },
+    {
+        "name": "wpackagist-plugin/akismet",
+        "version": "3.2",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/akismet/",
+            "reference": "tags/3.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/akismet.3.2.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/akismet/"
+    },
+    {
+        "name": "wpackagist-plugin/mailchimp-for-wp",
+        "version": "4.0.12",
+        "version_normalized": "4.0.12.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/mailchimp-for-wp/",
+            "reference": "tags/4.0.12"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/mailchimp-for-wp.4.0.12.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/mailchimp-for-wp/"
+    },
+    {
+        "name": "wpackagist-plugin/mailchimp-top-bar",
+        "version": "1.2.16",
+        "version_normalized": "1.2.16.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/mailchimp-top-bar/",
+            "reference": "tags/1.2.16"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/mailchimp-top-bar.1.2.16.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/mailchimp-top-bar/"
+    },
+    {
+        "name": "wpackagist-plugin/super-socializer",
+        "version": "7.8.11",
+        "version_normalized": "7.8.11.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/super-socializer/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/super-socializer.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/super-socializer/"
+    },
+    {
+        "name": "wpackagist-plugin/user-role-editor",
+        "version": "4.31.1",
+        "version_normalized": "4.31.1.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/user-role-editor/",
+            "reference": "tags/4.31.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/user-role-editor.4.31.1.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/user-role-editor/"
+    },
+    {
+        "name": "wpackagist-plugin/nav-menu-roles",
+        "version": "1.8.6",
+        "version_normalized": "1.8.6.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/nav-menu-roles/",
+            "reference": "tags/1.8.6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/nav-menu-roles.1.8.6.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/nav-menu-roles/"
+    },
+    {
+        "name": "wpackagist-plugin/sidebar-login",
+        "version": "2.7.3",
+        "version_normalized": "2.7.3.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/sidebar-login/",
+            "reference": "tags/2.7.3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/sidebar-login.2.7.3.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/sidebar-login/"
+    },
+    {
+        "name": "wpackagist-plugin/shortcodes-ultimate",
+        "version": "4.9.9",
+        "version_normalized": "4.9.9.0",
+        "source": {
+            "type": "svn",
+            "url": "https://plugins.svn.wordpress.org/shortcodes-ultimate/",
+            "reference": "tags/4.9.9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://downloads.wordpress.org/plugin/shortcodes-ultimate.4.9.9.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/shortcodes-ultimate/"
+    }
+]

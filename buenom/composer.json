@@ -1,0 +1,53 @@
+{
+    "name": "fabricciomb/wordpressmb",
+    "description": "Responsible for installing the core of wordpress, plugins and themes",
+    "authors": [
+        {
+            "name": "FabriccioMB",
+            "email": "fabricciobuenomartinelli@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "webfatorial/wordpress": "*",
+        "wpackagist-plugin/maintenance": "*",
+        "wpackagist-plugin/admin-menu-editor": "*",
+        "wpackagist-plugin/erp": "*",
+        "wpackagist-plugin/events-manager": "*",
+        "wpackagist-plugin/contact-form-7": "*",
+        "wpackagist-plugin/chats": "*",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/woocommerce-delivery-notes": "*",
+        "wpackagist-plugin/woocommerce": "*",
+        "wpackagist-plugin/woocommerce-correios": "*",
+        "wpackagist-plugin/woocommerce-pagseguro": "*",
+        "wpackagist-plugin/woocommerce-mercadopago": "*",
+        "wpackagist-plugin/phoneme-order-woocommerce": "*",
+        "wpackagist-plugin/woocommerce-role-based-price": "*",
+        "wpackagist-plugin/wc-abandoned-cart-failed-payment-recovery": "*",
+        "wpackagist-plugin/wc-fields-factory": "*",
+        "wpackagist-plugin/cloudflare-flexible-ssl": "*",
+        "wpackagist-plugin/google-xml-sitemaps-v3-for-qtranslate": "*",
+        "wpackagist-plugin/akismet": "*",
+        "wpackagist-plugin/mailchimp-for-wp": "*",
+        "wpackagist-plugin/mailchimp-top-bar": "*",
+        "wpackagist-plugin/super-socializer": "*",
+        "wpackagist-plugin/user-role-editor": "*",
+        "wpackagist-plugin/nav-menu-roles": "*",
+        "wpackagist-plugin/sidebar-login": "*",
+        "wpackagist-plugin/shortcodes-ultimate": "*"
+    },
+    "extra": {
+        "wordpress-install-dir": "core",
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}

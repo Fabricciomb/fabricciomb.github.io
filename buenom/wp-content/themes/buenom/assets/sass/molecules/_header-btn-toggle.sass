@@ -1,0 +1,26 @@
+#btn-toggle
+	cursor: pointer
+	+breakpoint(full)
+		display: none
+	span
+		background-color: $colorheadericon
+		height: 0.1em
+		width: 1em
+		content: " "
+		display: block
+		position: relative
+		left: 0
+		margin: 0 auto
+		&:nth-child(1)
+			top: -0.2em
+		&:nth-child(2)
+			top: .0em
+		&:nth-child(3)
+			top: .2em
+	&:hover
+		span
+			background-color: $colorheadericonhover
+	&:active
+		span
+			+box-shadow
+			background-color: $colordefault1

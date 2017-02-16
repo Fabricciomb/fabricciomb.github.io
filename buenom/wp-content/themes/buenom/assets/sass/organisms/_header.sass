@@ -1,0 +1,14 @@
+#layout
+	display: none
+	+gradient(67deg, $colorlayout, $colorlayout2)
+	.header
+		@import ../molecules/header-logo
+		@import ../molecules/header-icon
+		@import ../molecules/header-btn-toggle
+		@import ../molecules/header-navbar
+		+grid
+		+gradient( 95deg, $colorheader, $colorheader2)
+		width: 100%
+		&.fixed
+			position: absolute
+			position: fixed

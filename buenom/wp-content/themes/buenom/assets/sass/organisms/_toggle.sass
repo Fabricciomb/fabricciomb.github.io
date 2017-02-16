@@ -1,0 +1,73 @@
+#toggle
+	+transition(0.5s)
+	+gradient(67deg, $colortoggle, $colortoggle2)
+	+box-shadow
+	z-index: 99
+	display: none
+	position: absolute
+	left: -35em
+	width: 20em
+	min-height: 100%
+	&.ontoggle
+		left: 0%
+	img
+		width: 60%
+		margin: 3em 20%
+		height: auto
+	.nav-toggle
+		border-bottom: 1px solid ($colortoggle + 30%)
+		+grid
+		height: 100%
+		max-width: 100%
+		padding: 0
+		ul
+			min-width: 100%
+			li
+				+icon
+				background: $colornavtogglelinkli
+				font-size(18px)
+				&:before
+					text-align: center
+					font-size(18px)
+					line-height: 3em
+					width: 10%
+					float: left
+					color: $colornavtogglelink
+				a
+					+font
+					width: 100%
+					line-height: 50px
+					display: block
+					z-index: 88
+					position: relative
+					color: $colornavtogglelink
+					&:active
+						+box-shadow
+						position: relative
+						z-index: 99
+				ul
+					display: block
+					li
+						background: $colornavtogglelinklihover
+						a
+							color: $colornavtogglelink
+						ul
+							padding: -1em
+
+	#close-toggle
+		top: 0
+		right: -2em
+		background: transparent
+		border: 0
+		position: absolute
+		padding: 1em
+		margin-top: 3em
+		+icon
+		&:before
+			position: fixed
+			font-size: 1.5em
+			color: $colorclosetoggle
+		&:active
+			&:before
+				+text-shadow
+				color: $colorclosetoggleclick
