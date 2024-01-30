@@ -1,56 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-a,p,h1,h2,h3,h4,h5{
-    font-family: 'Roboto', sans-serif;
-    text-shadow: 0px 0px 15px black;
+:root{
+	/*styles for body*/
+	--background: white; /*url(/fabriccio/assets/logo.png);*/
+	/*header navbar styles*/
+	--header-bg: white;
+	--header-color: black;
+	--header-color-hover: darkgray;
+	--fa-icon: black;
+	--fa-icon-color: darkgray;
+	/*toggle styles*/
+	--background-color-toggle: white;
+	--background-section1-homepage:  #9B59B6;
+	/*section1 styles*/
+	--color-section1-homepage-h1: #F39C12;
+	--color-section1-homepage-p: white;
+	--section1-padding: 170px 0 100px 0;
+	--bg-color-button-section1-homepage: transparent;
+	--color-button-section1-homepage: white;
+	--bg-color-button-section1-homepage-hover: transparent;
+	--color-button-section1-homepage-hover: white;
+	--bg-color-border-button-section1-homepage: white;
+	--bg-color-border-button-section1-homepage-hover: white;
 }
+/* Reset default styles for HTML and body */
+html, body {  width: 100%;  margin: 0;  padding: 0;}
 
-body {
-    background-image: url(https://media0.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 100vh
-}
+/* Body styles */
+body {  background-size: 100% auto;  font-family: 'Montserrat', sans-serif; background: var(--background)}
+main{margin-top:66px;}
 
-.profilo{
-    width: 90%;
-    margin: 0 auto;
-    padding: 100px 0px 0px 0px;
-    text-align: center;
-}
+/* Header styles */
+.offcanvas-body {    height: 50px!important;}
+nav.navbar.navbar-expand-md.py-3.fixed-top {    max-height: 95px;    display: block;}
+.navbar-brand{background: var(--logo-img), width: 50px; height: 50px; padding-bottom:0px!important;}
+nav.navbar {background: var(--header-bg)!important}
+nav.navbar a,nav.navbar a#submenuLink{color: var(--header-color); padding:0 0 0 15px; line-height:50px;}
+nav.navbar a:hover{color: var(--header-color-hover)}
 
-.profilo h2{
-    color: white;
-}
+/* Adjust line height for dropdown items */
+a.dropdown-item, a.dropdown-item:hover {  min-height: 50px!important;}
+/* Social links styles */
+.social {  list-style: none;  padding: 0;  display: flex;  justify-content: center;  align-items: center;}
+.social li {  float: left;  padding-left:10px;}
+.social li a, .fa {  text-decoration: none;}
 
-.profilo img{
-    width:200px;
-    height: 200px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px black;
-}
+/* Styles for font-awesome icons in social links */
+.social li a.fa::before { line-height: 40px;color: var(--fa-icon)!important; margin-top:35px!important;}
+a.fa {    margin-top: 10px;}
+/* Hover effect for font-awesome icons in social links */
+.social li a:hover.fa::before {  color: var(--fa-icon-hover)!important;}
 
-.social{
-    width: 90%;
-    text-align: center;
-    margin: 0 auto;
-}
+/* Styles for card text with limited lines */
+.card-text {  display: -webkit-box;  -webkit-line-clamp: 3; /* Number of lines to show */  -webkit-box-orient: vertical;  overflow: hidden;}
 
-/* Style all font awesome icons */
-.fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius
-  background: black;
-  color: white;
-}
 
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.7;
+/* Styles for homepage section1 */
+.position-relative.overflow-hidden.text-center {    padding: var(--section1-padding);    background: var(--background-section1-homepage);}
+.position-relative.overflow-hidden.text-center h1{     color: var(--color-section1-homepage-h1);}
+.position-relative.overflow-hidden.text-center p{     color: var(--color-section1-homepage-p);}
+.position-relative.overflow-hidden.text-center button {background:var(--bg-color-button-section1-homepage);color:var(--color-button-section1-homepage);    border: 1px solid var(--bg-color-border-button-section1-homepage);}
+.position-relative.overflow-hidden.text-center button:hover {    background:var(--bg-color-button-section1-homepage-hover);color:var(--color-button-section1-homepage-hover);    border: 1px solid var(--bg-color-border-button-section1-homepage-hover)}
+
+
+
+/* Media queries for mobile version */
+@media (max-width: 767px) {
+  /* Menu toggle styles */
+  div#offcanvas { background: var(--background-color-toggle);}
+  a#submenuLink {    text-align: center;  }
+  /* Dropdown menu styles */
+  ul.dropdown-menu.align-items-center.show {    border: none;    text-align: center;  }
+  /* Center align dropdown items */
+  a.dropdown-item, a.dropdown-item:hover {    text-align: center;    line-height: 50px!important;  }
+  /* Styles for social links in mobile version */
+  .social {    padding: 20px 0;    margin-top: 10px;     justify-content: center;  }
+  ul.dropdown-menu.show { background: transparent; margin: 0 auto;}
 }
