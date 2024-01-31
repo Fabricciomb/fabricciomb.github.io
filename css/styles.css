@@ -1,77 +1,196 @@
-:root{
-	/*styles for body*/
-	--background: white; /*url(/fabriccio/assets/logo.png);*/
-	/*header navbar styles*/
-	--header-bg: white;
-	--header-color: black;
-	--header-color-hover: darkgray;
-	--fa-icon: black;
-	--fa-icon-color: darkgray;
-	/*toggle styles*/
-	--background-color-toggle: white;
-	--background-section1-homepage:  #9B59B6;
-	/*section1 styles*/
-	--color-section1-homepage-h1: #F39C12;
-	--color-section1-homepage-p: white;
-	--section1-padding: 170px 0 100px 0;
-	--bg-color-button-section1-homepage: transparent;
-	--color-button-section1-homepage: white;
-	--bg-color-button-section1-homepage-hover: transparent;
-	--color-button-section1-homepage-hover: white;
-	--bg-color-border-button-section1-homepage: white;
-	--bg-color-border-button-section1-homepage-hover: white;
+:root {
+    /* Root level CSS variables for consistent theming */
+    --background: white;
+    --header-bg: white;
+    --header-color: black;
+    --header-color-hover: darkgray;
+    --fa-icon: black;
+    --fa-icon-color: darkgray;
+    --background-color-toggle: white;
+    --background-section1-homepage: linear-gradient(90deg, rgba(126, 65, 246, 1) 35%, rgba(175, 75, 248, 1) 100%);
+    --color-section1-homepage-h1: #F9DB0D;
+    --color-section1-homepage-p: white;
+    --section1-padding: 170px 0 100px 0;
+    --bg-color-button-section1-homepage: transparent;
+    --color-button-section1-homepage: white;
+    --bg-color-button-section1-homepage-hover: transparent;
+    --color-button-section1-homepage-hover: white;
+    --bg-color-border-button-section1-homepage: white;
+    --bg-color-border-button-section1-homepage-hover: white;
 }
+
 /* Reset default styles for HTML and body */
-html, body {  width: 100%;  margin: 0;  padding: 0;}
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 /* Body styles */
-body {  background-size: 100% auto;  font-family: 'Montserrat', sans-serif; background: var(--background)}
-main{margin-top:66px;}
+body {
+    background-size: 100% auto;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--background);
+}
+
+/* Main content margin for fixed navbar */
+main {
+    margin-top: 66px;
+}
+
+/* Logo image styles */
+.logo-img img {
+    width: 40px;
+    height: 40px;
+}
 
 /* Header styles */
-.offcanvas-body {    height: 50px!important;}
-nav.navbar.navbar-expand-md.py-3.fixed-top {    max-height: 95px;    display: block;}
-.navbar-brand{background: var(--logo-img), width: 50px; height: 50px; padding-bottom:0px!important;}
-nav.navbar {background: var(--header-bg)!important}
-nav.navbar a,nav.navbar a#submenuLink{color: var(--header-color); padding:0 0 0 15px; line-height:50px;}
-nav.navbar a:hover{color: var(--header-color-hover)}
+.offcanvas-body {
+    height: 50px !important;
+}
+
+nav.navbar.navbar-expand-md.py-3.fixed-top {
+    max-height: 95px;
+    display: block;
+}
+
+.navbar-brand {
+    background: var(--logo-img), width: 50px;
+    height: 50px;
+    padding-bottom: 0px !important;
+}
+
+nav.navbar {
+    background: var(--header-bg) !important;
+}
+
+nav.navbar a,
+nav.navbar a#submenuLink {
+    color: var(--header-color);
+    line-height: 50px;
+	padding: 0px;
+	padding-left: 20px;
+}
+
+nav.navbar a:hover {
+    color: var(--header-color-hover);
+}
 
 /* Adjust line height for dropdown items */
-a.dropdown-item, a.dropdown-item:hover {  min-height: 50px!important;}
+a.dropdown-item, a.dropdown-item:hover {
+    min-height: 50px !important;
+}
+
 /* Social links styles */
-.social {  list-style: none;  padding: 0;  display: flex;  justify-content: center;  align-items: center;}
-.social li {  float: left;  padding-left:10px;}
-.social li a, .fa {  text-decoration: none;}
+.social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li {
+    float: left;
+    padding-left: 10px;
+}
+
+.social li a, .fa {
+    text-decoration: none;
+}
 
 /* Styles for font-awesome icons in social links */
-.social li a.fa::before { line-height: 40px;color: var(--fa-icon)!important; margin-top:35px!important;}
-a.fa {    margin-top: 10px;}
+.social li a.fa::before {
+    line-height: 40px;
+    color: var(--fa-icon) !important;
+    margin-top: 35px !important;
+}
+
+a.fa {
+    margin-top: 10px;
+}
+
 /* Hover effect for font-awesome icons in social links */
-.social li a:hover.fa::before {  color: var(--fa-icon-hover)!important;}
+.social li a:hover.fa::before {
+    color: var(--fa-icon-hover) !important;
+}
 
 /* Styles for card text with limited lines */
-.card-text {  display: -webkit-box;  -webkit-line-clamp: 3; /* Number of lines to show */  -webkit-box-orient: vertical;  overflow: hidden;}
-
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Number of lines to show */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 /* Styles for homepage section1 */
-.position-relative.overflow-hidden.text-center {    padding: var(--section1-padding);    background: var(--background-section1-homepage);}
-.position-relative.overflow-hidden.text-center h1{     color: var(--color-section1-homepage-h1);}
-.position-relative.overflow-hidden.text-center p{     color: var(--color-section1-homepage-p);}
-.position-relative.overflow-hidden.text-center button {background:var(--bg-color-button-section1-homepage);color:var(--color-button-section1-homepage);    border: 1px solid var(--bg-color-border-button-section1-homepage);}
-.position-relative.overflow-hidden.text-center button:hover {    background:var(--bg-color-button-section1-homepage-hover);color:var(--color-button-section1-homepage-hover);    border: 1px solid var(--bg-color-border-button-section1-homepage-hover)}
+.position-relative.overflow-hidden.text-center {
+    padding: var(--section1-padding);
+    background: var(--background-section1-homepage);
+}
 
+.position-relative.overflow-hidden.text-center h1 {
+    color: var(--color-section1-homepage-h1);
+}
 
+.position-relative.overflow-hidden.text-center p {
+    color: var(--color-section1-homepage-p);
+}
+
+.position-relative.overflow-hidden.text-center a {
+    background: var(--bg-color-button-section1-homepage);
+    color: var(--color-button-section1-homepage);
+    border: 1px solid var(--bg-color-border-button-section1-homepage);
+}
+
+.position-relative.overflow-hidden.text-center a:hover {
+    background: var(--bg-color-button-section1-homepage-hover);
+    color: var(--color-button-section1-homepage-hover);
+    border: 1px solid var(--bg-color-border-button-section1-homepage-hover);
+}
 
 /* Media queries for mobile version */
 @media (max-width: 767px) {
-  /* Menu toggle styles */
-  div#offcanvas { background: var(--background-color-toggle);}
-  a#submenuLink {    text-align: center;  }
-  /* Dropdown menu styles */
-  ul.dropdown-menu.align-items-center.show {    border: none;    text-align: center;  }
-  /* Center align dropdown items */
-  a.dropdown-item, a.dropdown-item:hover {    text-align: center;    line-height: 50px!important;  }
-  /* Styles for social links in mobile version */
-  .social {    padding: 20px 0;    margin-top: 10px;     justify-content: center;  }
-  ul.dropdown-menu.show { background: transparent; margin: 0 auto;}
+    /* Menu toggle styles */
+    .offcanvas-body .logo-img {
+        display: none;
+    }
+
+    /* Menu toggle background */
+    div#offcanvas {
+        background: var(--background-color-toggle);
+    }
+
+    a#submenuLink {
+        text-align: center;
+    }
+	
+	.nav-link {
+		padding-left:50px;
+	}
+
+    /* Dropdown menu styles */
+    ul.dropdown-menu.align-items-center.show {
+        border: none;
+        text-align: center;
+    }
+
+    /* Center align dropdown items */
+    a.dropdown-item, a.dropdown-item:hover {
+        text-align: center;
+        line-height: 50px !important;
+    }
+
+    /* Styles for social links in mobile version */
+    .social {
+        padding: 20px 0;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    ul.dropdown-menu.show {
+        background: transparent;
+        margin: 0 auto;
+    }
 }
